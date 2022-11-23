@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Arrays</h2>
+
+<p>The push method appends a new element to an array.</p>
+<input type="text" id="input" name="input" placeholder="Masukkan Nama Barang">
+<input type="button" onclick="tambah()" value="tambah"></button>
+
+<p id="demo"></p>
+
+<script>
+const barang = ["kayu", "mie", "gorengan"];
+document.getElementById("demo").innerHTML = barang;
+function tambah() {
+  var masuk = document.getElementById('input');
+  barang.push(masuk.value);
+  document.getElementById("demo").innerHTML = barang;
+}
+</script>
+
+</body>
+</html>
